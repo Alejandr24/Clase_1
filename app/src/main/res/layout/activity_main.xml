@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#434141"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/operatorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#070707" />
+
+        <EditText
+            android:id="@+id/number1EditText"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:backgroundTint="#C11919"
+            android:foregroundTint="#673AB7"
+            android:hint="@string/mensaje1"
+            android:inputType="number"
+            android:textColor="#FBF7F7"
+            android:textColorHint="#FFFFFF"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/number2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="#0A6FBF"
+            android:hint="@string/mensaje2"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1FE126"
+            android:text="@string/BotonText" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
